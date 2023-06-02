@@ -1,0 +1,246 @@
+/*header and footer*/
+header, footer {
+  background-color: #6096B4;
+  color: black;
+  border: 4px solid #93BFCF;
+  padding: 10px;
+}
+
+/*footer*/
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  color: #93BFCF;
+}
+
+footer p {
+  text-align: right;
+  font-style: italic;
+  font-size: 10pt;
+  margin-top: 20px;
+}
+/*contact me*/
+#contactme h3 {
+  font-size: 12px;
+  color: #000000;
+  background-color: #93BFCF;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 0;
+}
+
+#contactme input[type="date"], 
+#contactme input[type="text"], 
+#contactme textarea {
+  font-size: 12px;
+}
+
+#contactme input[type="text"], 
+#contactme textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contactme input[type="submit"] {
+  font-size: 12px;
+}
+
+/*nav*/
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 12pt;
+}
+header nav a:hover {
+  color: #EEE9DA;
+}
+nav{
+  font-size:12pt;
+  display:flex;
+  justify-content:center;
+  background-color:inherit;
+}
+
+nav a{
+  text-decoration:none;
+  color: inherit;
+  border:solid;
+  border-radius:10px;
+  border-width:2px;
+  background-color: #93BFCF;
+  padding:2px;
+  margin:6px;
+}
+
+
+/*h1*/
+ h1 {
+    text-align: center;
+    background-color: #93BFCF;
+    color:#0c9cd0;
+
+  }
+/*image*/
+  img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+  .img1 {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+ 
+
+/*body and main*/
+  body {
+    font-family: sans-serif;
+    font-size: 14pt;
+  }
+
+
+  main {
+    background-color: lightblue;
+  }
+  main p {
+    font-size: 16px;
+    text-align: left;
+  }
+/*hr*/
+hr {
+  background-color:white;
+  border-style: none;
+  height:2px;
+}
+  
+/*course*/
+.search-container input[type=text] {
+  padding: 5px;
+  border-bottom: 2px solid gray;
+  font-size: 18px;
+  margin-right: 20px;
+  width: 60%;
+}
+
+.filter-container, .sort-container {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* label */
+label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* select */
+select {
+  font-size: 18px;
+  padding: 5px;
+}
+
+/* course-container */
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* course */
+.course {
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+/* course img */
+.course img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+}
+
+/* course h2 */
+.course h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* course p */
+.course p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* course:hover img */
+.course:hover img {
+  transform: scale(1.1);
+}
+
+/* 设置 search-container */
+.search-container {
+  text-align: center;
+}
+
+/* 设置 filter-container 和 sort-container */
+.filter-container,
+.sort-container {
+  display: left;
+  width: 40%;
+  margin: 0 5%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Apply default styles to all devices */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Apply styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  /* Reduce padding and font size for header and footer */
+  header, footer {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  /* Make the nav links stack vertically */
+  header nav {
+    flex-direction: column;
+  }
+
+  /* Adjust image size */
+  img {
+    width: 150px;
+  }
+
+  /* Adjust table layout */
+  table {
+    display: block;
+    margin: auto;
+  }
+
+  td {
+    display: block;
+    text-align: center;
+  }
+
+  /* Set margin for contact info */
+  #contact p {
+    margin-top: 10px;
+  }
+}
+
